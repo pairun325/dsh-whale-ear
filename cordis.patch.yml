@@ -1,0 +1,4 @@
+# dsh-whale-ear 的 bundle patch：把耳朵插件插进 profile。
+- insert:
+    - id: whale-ear
+      name: 'dsh-whale-ear'

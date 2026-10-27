@@ -1,0 +1,20 @@
+{
+  "name": "dsh-whale-ear",
+  "version": "0.1.0",
+  "description": "Two ears for the whale: hear system audio (loopback) and the microphone, turn speech into text offline.",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "audio", "loopback", "speech-to-text", "whisper", "microphone"],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib/index.js", "helper/listen.py", "cordis.patch.yml", "README.md", "LICENSE"],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
